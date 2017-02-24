@@ -1,0 +1,19 @@
+{
+  "name": "travisciexample",
+  "version": "1.0.0",
+  "description": "Assignment 2 Travis CI Test",
+  "main": "main.js",
+  "scripts": {
+    "test": "./Test/test1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TroyFernandes/A2-TravisCIExample.git"
+  },
+  "author": "Troy Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TroyFernandes/A2-TravisCIExample/issues"
+  },
+  "homepage": "https://github.com/TroyFernandes/A2-TravisCIExample#readme"
+}
