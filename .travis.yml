@@ -5,7 +5,9 @@ before_script:
   - npm install mocha
   - npm install codecov.io
   - npm install codecov
+  - npm install nodeunit jscoverage codecov --save-dev
+  - export CODECOV_TOKEN=":c186f38f-d474-4350-9419-af731ec7869f"
 
 script: mocha Test/test1.js Test/test2.js 
 after_success:
-  - codecov --token=c186f38f-d474-4350-9419-af731ec7869f
+  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov
