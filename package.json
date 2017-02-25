@@ -1,7 +1,7 @@
 {
   "name": "travisciexample",
   "version": "1.0.0",
-  "description": "Assignment 2 Travis CI Example",
+  "description": "Assignment 2 Travis CI Example ",
   "main": "main.js",
   "scripts": {
     "test": "mocha Test/test1.js Test/test2.js"
