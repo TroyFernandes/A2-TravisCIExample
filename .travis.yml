@@ -6,6 +6,7 @@ before_script:
   - npm install codecov.io
   - npm install codecov
   - npm install nodeunit jscoverage codecov --save-dev
+  - npm install -g istanbul
   - export CODECOV_TOKEN=":c186f38f-d474-4350-9419-af731ec7869f"
 
 script: mocha Test/test1.js Test/test2.js 
