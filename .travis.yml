@@ -8,4 +8,4 @@ script:
  - python -m unittest discover -v
  - coverage run test.py 
  after_success:
-  - codecov --token=c186f38f-d474-4350-9419-af731ec7869f # upload coverage report to codecov.io
+  - codecov --token=c186f38f-d474-4350-9419-af731ec7869f 
