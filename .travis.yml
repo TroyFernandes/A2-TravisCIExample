@@ -11,4 +11,4 @@ before_script:
 
 script: mocha Test/test1.js Test/test2.js 
 after_success:
-  - istanbul cover ./Test/test1.js --report lcovonly -- -R spec && codecov
+  - istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/*
