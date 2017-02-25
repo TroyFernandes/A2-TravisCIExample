@@ -18,6 +18,7 @@
   "homepage": "https://github.com/TroyFernandes/A2-TravisCIExample#readme",
   "dependencies": {
     "chai": "^3.5.0",
+    "codecov.io": "^0.1.6",
     "mocha": "^3.2.0"
   }
 }
