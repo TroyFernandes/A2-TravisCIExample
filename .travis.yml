@@ -1,0 +1,18 @@
+language: python
+python: '2.7'
+install:
+- pip install codecov
+- pip install coverage
+script:
+- python -m unittest discover -v
+- coverage run test.py
+after_success:
+- codecov --token=09619586-aaad-45f7-be2f-7d021c424447
+deploy:
+  provider: s3
+  access_key_id: AKIAILL4V7JUGQIVWYIQ
+  secret_access_key:
+    secure: mNNiLViMgrCuz5IPlJxcFboL1/7yqob37+Ed4a8Dvas7s7k5+YP/iB5wPyf9TcslVryDuNk3Hpl+/YVvF4oil9mxuH632eY5KRR8Qq3CzK4ZbavXZGOUy6sOdE+dLqxN315/gFYqKZAnIx3k4z4QEJ9PAyBSHBVE3hZTL6EyTEuFGK/UlVc2b7kK0GN/NnbrEPKUJzt4Gd5VDQo1aecjkaSyRCH37KC8s+7theggWxVaQNKGf9Bp9kB1eFNUubfPqCO1Ah2zc1mH0R2ndVqxuJpxsyHXwmOZqJbYAslzUIrK+uvHrKRfwmSX79yv1oy14vzyfd3TzzN8ZYgBaimj8iQoifpVNORF/6nFVj8RZMPzOrj1XjeM3J76FTOnF0fGfrtUU9L91jXW8pbCQpjM6PvUlruwvIUX/vW3qtzzq4KdyjD/R9JRPgaIbQwDan1JGTHNkFu3w1DcfogsjuerCqX0wyHCcCYFRlmC5ibmyQRsqja7OO9Hpg1BMDTUyg7NF89ADxlal3AWxEdo8hcZhfL0HXd2BYSzLWDBMAEXJ/dl64sIOKoNET350zG7nRWMAaowTKneQy1TYQbu3XAP9cb8JXe/la5PedwOyYt5UYlb7ai2xFQDtLCC+FTF778YDG0t8EUzWuJUrALNW4ebb2t1ojGiC9E5a+ugwcuNgzM=
+  bucket: cps847traviscig6
+  local-dir: html
+
